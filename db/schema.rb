@@ -10,18 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_20_172945) do
+ActiveRecord::Schema.define(version: 2021_07_20_175405) do
 
   create_table "players", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.string "primary_position"
     t.boolean "injured?"
-    t.integer "teams_id"
+    t.integer "team_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "jersey_number"
-    t.index ["teams_id"], name: "index_players_on_teams_id"
+    t.index ["team_id"], name: "index_players_on_team_id"
   end
 
   create_table "teams", force: :cascade do |t|
