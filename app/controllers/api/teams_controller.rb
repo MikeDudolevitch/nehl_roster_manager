@@ -5,7 +5,7 @@ class Api::TeamsController < ApplicationController
   def index
     teams = Team.all
       
-    render json: teams, only: [:name, :logo_img, :players], include: :players
+    render json: teams, only: [:name, :logo_img, :players], include: {players: {except: [:created_at, :updated_at]}}
   end
 
   # GET /teams/1
