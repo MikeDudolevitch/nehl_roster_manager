@@ -48,3 +48,8 @@ t4.players.build(first_name: "Karl", last_name: "Konstantinov", primary_position
 t4.players.build(first_name: "Evan", last_name: "Evans", primary_position: "G", jersey_number: 30, handedness: "Left", injured?: false)
 t4.players.build(first_name: "Blanche", last_name: "Devereaux", primary_position: "C", jersey_number: 26, handedness: "Right", injured?: false)
 t4.players.build(first_name: "Igor", last_name: "Smithwick", primary_position: "D", jersey_number: 29, handedness: "Right", injured?: true)
+
+t1.save
+t2.save
+t3.save
+t4.save
