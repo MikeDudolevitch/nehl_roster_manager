@@ -17,8 +17,10 @@ ActiveRecord::Schema.define(version: 2021_07_20_163629) do
     t.string "last_name"
     t.string "primary_position"
     t.boolean "injured?"
+    t.integer "teams_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["teams_id"], name: "index_players_on_teams_id"
   end
 
   create_table "teams", force: :cascade do |t|

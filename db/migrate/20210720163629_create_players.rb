@@ -5,7 +5,7 @@ class CreatePlayers < ActiveRecord::Migration[6.1]
       t.string :last_name
       t.string :primary_position
       t.boolean :injured?
-
+      t.references :teams
       t.timestamps
     end
   end
