@@ -46,6 +46,6 @@ class Api::PlayersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def player_params
-      params.require(:player).permit(:first_name, :last_name, :primary_position, :injured?)
+      params.require(:player).permit(:first_name, :last_name, :primary_position, :injured?, :jersey_number, :handedness)
     end
 end
